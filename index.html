@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearningVision</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="project-title">LearningVision</h1>
+      <div class="hamburger-menu">
+        <button id="hamburger-icon" aria-label="Menu">
+          &#9776;
+<!--          <span></span>-->
+<!--          <span></span>-->
+<!--          <span></span>-->
+        </button>
+        <div id="dropdown-menu" class="dropdown-menu hidden">
+          <a href="#" id="logout-btn">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="nested-search-container">
+      <div class="container">
+        <h2 class="section-title">Search Tutorials</h2>
+        <p class="section-description">
+          Use the search bar to find tutorials and refine your results by level.
+        </p>
+
+        <div class="search-ui">
+          <div class="search-bar">
+            <input type="text" id="keyword-search" placeholder="Search by keyword..." aria-label="Keyword Search">
+            <select id="level-filter" aria-label="Level Filter">
+              <option value="">All Levels</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+            <button id="search-btn" class="search-btn">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="container">
+        <h2 class="section-title">Search Results</h2>
+        <div id="results-container" class="results-display">
+          <!-- Search results will populate here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 LearningVision. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>

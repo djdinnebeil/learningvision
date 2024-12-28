@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearningVision</title>
+  <link rel="stylesheet" href="landing-page.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="project-title">LearningVision</h1>
+      <nav>
+        <button class="hamburger-menu" aria-label="User Menu">
+          &#9776; <!-- Hamburger Icon -->
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="center-center" style="max-width: 800px;">
+      <section class="nested-search-container" style="margin: 15px;">
+        <h2>Nested Searching</h2>
+        <p>Use nested search to refine your results and find exactly what you need.</p>
+        <div class="search-ui">
+          <div class="search-bar">
+            <input type="text" id="main-search" placeholder="Search topics..." aria-label="Main Search" value="software engineering" style="margin-left: 12px; width: 600px;">
+            <button id="main-search-btn" class="search-btn">Search</button>
+          </div>
+          <div class="nested-results">
+            <h3>Refine Your Search</h3>
+            <div class="search-bar">
+              <input type="text" id="nested-search" placeholder="Search within results..." value="learning" aria-label="Nested Search" style="margin-left: 12px; width: 600px;">
+              <button id="nested-search-btn" class="search-btn">Refine</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="demo-section">
+      <h2 id="results-title">Results</h2>
+      <hr>
+      <div id="demo-results" class="results-display">
+        <div class="result-item">
+          <h3>Introduction to Software Engineering</h3>
+          <p>A comprehensive guide to the basics of software engineering.</p>
+        </div>
+        <div class="result-item">
+          <h3>Advanced Learning Techniques</h3>
+          <p>Explore advanced methods to improve your learning process.</p>
+        </div>
+        <div class="result-item">
+          <h3>Effective Search Strategies</h3>
+          <p>Learn how to refine your searches for better results.</p>
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="margin-left: 5px;">&copy; 2024 LearningVision. All rights reserved.</p>
+  </footer>
+</body>
+</html>
